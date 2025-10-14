@@ -1,0 +1,14 @@
+# Import the NumPy library
+import numpy as np
+# Create two sample arrays
+a = np.array([10, 20, 30, 40, 50])
+b = np.array([15, 20, 25, 40, 60])
+# Perform element-wise comparisons
+print("Array a:", a)
+print("Array b:", b)
+print("\na > b :", np.greater(a, b))
+print("a >= b :", np.greater_equal(a, b))
+print("a < b :", np.less(a, b))
+print("a <= b :", np.less_equal(a, b))
+print("a == b :", np.equal(a, b))
+print("a != b :", np.not_equal(a, b))
