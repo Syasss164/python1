@@ -1,0 +1,15 @@
+# Import NumPy library
+import numpy as np
+# Create a NumPy array
+arr = np.array([4, 7, 2, 7, 5, 9, 2, 4, 7, 9])
+# Display the array
+print("Array:", arr)
+# Using NumPy methods
+print("Maximum value:", np.max(arr))
+print("Minimum value:", np.min(arr))
+print("Index of Maximum value:", np.argmax(arr))
+print("Index of Minimum value:", np.argmin(arr))
+print("String Representation (repr):", repr(arr))
+# Unique elements and their count
+unique_elements = np.unique(arr)
+print("Unique elements:", unique_elements)
