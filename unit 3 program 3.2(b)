@@ -1,0 +1,12 @@
+import numpy as np
+# Create a 2D NumPy array
+arr = np.array([[10, 25, 30],
+ [40, 15, 20],
+ [5, 60, 35]])
+# Display the array
+print("Array:\n", arr)
+# Find indices of maximum and minimum elements along different axes
+print("\nIndex of Maximum elements along axis 0 (column-wise):", np.argmax(arr, axis=0))
+print("Index of Minimum elements along axis 0 (column-wise):", np.argmin(arr, axis=0))
+print("\nIndex of Maximum elements along axis 1 (row-wise):", np.argmax(arr, axis=1))
+print("Index of Minimum elements along axis 1 (row-wise):", np.argmin(arr, axis=1))
