@@ -1,0 +1,11 @@
+import pandas as pd
+# Creating a Pandas Series
+data = pd.Series([10, 20, 30, 40, 50])
+print("Pandas Series:")
+print(data)
+# Converting Series to Python list
+list_data = data.tolist()
+# Displaying the converted list and its type
+print("\nConverted Python List:")
+print(list_data)
+print("\nType of the converted object:", type(list_data))
