@@ -1,0 +1,16 @@
+import numpy as np
+# Creating a sample array
+arr = np.array([[10, 25, 8],
+ [45, 12, 33]])
+print("Array:\n", arr)
+# Finding the indices of maximum and minimum elements along axis 0 (column-wise)
+max_index_axis0 = np.argmax(arr, axis=0)
+min_index_axis0 = np.argmin(arr, axis=0)
+# Finding the indices of maximum and minimum elements along axis 1 (row-wise)
+max_index_axis1 = np.argmax(arr, axis=1)
+min_index_axis1 = np.argmin(arr, axis=1)
+# Displaying results
+print("\nIndices of maximum elements along axis 0:", max_index_axis0)
+print("Indices of minimum elements along axis 0:", min_index_axis0)
+print("\nIndices of maximum elements along axis 1:", max_index_axis1)
+print("Indices of minimum elements along axis 1:", min_index_axis1)
