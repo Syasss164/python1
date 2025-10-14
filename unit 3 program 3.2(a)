@@ -1,0 +1,13 @@
+# Create a NumPy array
+arr = np.array([10, 25, 15, 40, 30, 45, 20, 50])
+# Display the array
+print("Array:", arr)
+# Specify a number
+num = 30
+# Extract elements less than the specified number
+less_than = arr[arr < num]
+# Extract elements greater than the specified number
+greater_than = arr[arr > num]
+# Display the results
+print(f"\nNumbers less than {num}:", less_than)
+print(f"Numbers greater than {num}:", greater_than)
