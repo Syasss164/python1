@@ -1,0 +1,29 @@
+ # Import NumPy library
+import numpy as np
+# Get help on add function
+np.info(np.add)
+# Create arrays
+a = np.array([1, 2, 3])
+b = np.array([4, 5, 6])
+# Add arrays
+sum_ab = np.add(a, b)
+print("Sum of arrays:", sum_ab)
+# Check comparisons
+print("All elements greater than 0:", np.all(a > 0))
+print("Elements greater than or equal to 2:", np.greater_equal(a, 2))
+print("Elements less than 3:", np.less(a, 3))
+print("Elements less than or equal to 2:", np.less_equal(a, 2))
+print("Check equality:", np.equal(a, b))
+# Check if arrays are approximately equal
+c = np.array([1.0, 2.01, 3.0])
+print("All elements close:", np.allclose(a, c, rtol=0.01))
+# Create special arrays
+zeros_array = np.zeros(5)
+ones_array = np.ones(5)
+linspace_array = np.linspace(0, 10, 5) # 5 values between 0 and 10
+print("Zeros array:", zeros_array)
+print("Ones array:", ones_array)
+print("Linspace array:", linspace_array)
+# Convert array to list
+array_list = a.tolist()
+print("Array converted to list:", array_list)
