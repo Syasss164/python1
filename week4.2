@@ -1,0 +1,23 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+# Read the number of words
+n = int(input())
+
+# Initialize a dictionary to count occurrences
+word_count = {}
+# List to preserve order of first appearance
+order = []
+
+# Read each word
+for _ in range(n):
+    word = input().strip()
+    if word not in word_count:
+        word_count[word] = 1
+        order.append(word)  # store the word's first appearance
+    else:
+        word_count[word] += 1
+
+# Output the number of distinct words
+print(len(order))
+
+# Output the occurrences in order of appearance
+print(' '.join(str(word_count[word]) for word in order))
